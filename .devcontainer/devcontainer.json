@@ -1,0 +1,32 @@
+{
+    // Dev Container's Name.
+    "name": "Base",
+    // Base Container Image.
+    "image": "mcr.microsoft.com/devcontainers/java:21-trixie",
+    // For running using Podman.
+    // https://github.com/microsoft/vscode-remote-release/issues/4443
+    "runArgs": [
+        "--userns=keep-id"
+    ],
+    "securityOpt": [
+        "label=disable",
+        "seccomp=unconfined"
+    ],
+    // Add features.
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "none",
+            "installMaven": true
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "nodeGypDependencies": false
+        }
+    },
+    // Use 'onCreateCommand' to run commands after the container is created.
+    "onCreateCommand": "/bin/bash ${containerWorkspaceFolder}/.devcontainer/on-create.sh",
+    // Uncomment to connect as root instead.
+    //"remoteUser": "root",
+    // Use default container `USER`,
+    // because of avoid reject directory creating by container startup user.
+    "containerUser": "vscode"
+}
