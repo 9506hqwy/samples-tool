@@ -6,6 +6,9 @@
         "editor.codeActionsOnSave": {
             "source.fixAll.markdownlint": "explicit"
         },
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "markdownlint.config": {
+        "MD034": false, // no-bare-urls
     }
 }
