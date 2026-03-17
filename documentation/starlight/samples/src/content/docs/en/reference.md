@@ -1,0 +1,8 @@
+---
+title: Reference
+---
+
+## Citation
+
+> [!WARNING]
+> Is there function to compile citation ?
