@@ -10,7 +10,7 @@ Write chapter content.
 
 Write section 1 content.
 
-## Sub Section 1
+### Sub Section 1
 
 Write sub section 1 content.
 
