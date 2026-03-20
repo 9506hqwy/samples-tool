@@ -1,0 +1,28 @@
+[project]
+site_name = "Zensical Samples"
+site_description = "A sample document projects."
+site_author = "9506hqwy"
+copyright = """
+Copyright &copy; 2026 9506hqwy
+"""
+nav = ["intro.md", "graph_table.md", "link.md", "reference.md"]
+
+[project.theme]
+language = "en"
+features = ["navigation.footer", "search.highlight"]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+# https://zensical.org/docs/setup/extensions/#default-configuration
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.blocks.caption]
+[project.markdown_extensions.pymdownx.highlight]
+[project.markdown_extensions.pymdownx.superfences]
