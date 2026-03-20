@@ -1,0 +1,37 @@
+<!--
+https://github.com/readthedocs/sphinx_rtd_theme/blob/3.1.0/sphinx_rtd_theme/static/js/versions.js_t#L84-L126
+-->
+{% set current_version = pagename.split('/')[0] if '/' in pagename else init_version %}
+{% set current_locale = pagename.split('/')[1] if '/' in pagename else init_locale %}
+
+<div class="rst-versions" data-toggle="rst-versions" role="note">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Read the Docs</span>
+    v: {{ current_version }} - {{ current_locale }}
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    <div class="injected">
+      <dl>
+        <dt>{{ _('Languages') }}</dt>
+        {% for version, locales in versions.items() %}
+        {% if current_version == version %}
+        {% for locale in locales %}
+        <dd><a href="{{ pathto(version + '/' + locale + '/index') }}">{{ locale }}</a></dd>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+      </dl>
+      <dl>
+        <dt>{{ _('Versions') }}</dt>
+        {% for version, locales in versions.items() %}
+        {% for locale in locales %}
+        {% if current_locale == locale %}
+        <dd><a href="{{ pathto(version + '/' + locale + '/index') }}">{{ version }}</a></dd>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+</div>
