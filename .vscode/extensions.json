@@ -4,6 +4,7 @@
         "davidanson.vscode-markdownlint",
         "editorconfig.editorconfig",
         "karatelabs.karate",
+        "marp-team.marp-vscode",
         "ms-python.python",
         "yzhang.markdown-all-in-one"
     ]
