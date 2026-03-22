@@ -3,6 +3,7 @@
         "astro-build.astro-vscode",
         "davidanson.vscode-markdownlint",
         "editorconfig.editorconfig",
+        "evilz.vscode-reveal",
         "karatelabs.karate",
         "marp-team.marp-vscode",
         "ms-python.python",
