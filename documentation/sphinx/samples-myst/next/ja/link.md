@@ -2,15 +2,15 @@
 
 ## セクションへのリンク
 
-[サブセクション1](./intro.md#section_section1_subsection1) にリンクを張る。
+[サブセクション1](#ja_section_section1_subsection1) にリンクを張る。
 
 ## 図へのリンク
 
-{numref}`fig-02` にリンクを張る。
+{numref}`ja-fig-02` にリンクを張る。
 
 ## 表へのリンク
 
-{numref}`table-01` にリンクを張る。
+{numref}`ja-table-01` にリンクを張る。
 
 ## 外部へのリンク
 

@@ -9,7 +9,7 @@
 図を挿入する。
 
 .. figure:: /_static/images/mark_koujichu.png
-   :name: fig-02
+   :name: ja-fig-02
    :align: center
    :scale: 50%
 
@@ -22,7 +22,7 @@
 表を挿入する。
 
 .. table:: グリッド表
-   :name: table-01
+   :name: ja-table-01
 
    +-----+--------+--------+
    |     | 列1    | 列2    |

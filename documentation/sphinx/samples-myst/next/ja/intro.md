@@ -6,7 +6,7 @@
 
 セクション1の本文を書く。
 
-(section_section1_subsection1)=
+(ja_section_section1_subsection1)=
 
 ### サブセクション1
 

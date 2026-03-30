@@ -5,7 +5,7 @@
 Insert graph.
 
 ```{figure} /_static/images/mark_koujichu.png
-:name: fig-02
+:name: en-fig-02
 :align: center
 :scale: 50%
 
@@ -17,7 +17,7 @@ Figure Title 01
 Insert table.
 
 ```{table} Grid Table
-:name: table-01
+:name: en-table-01
 
 |      | column1 | column2 |
 | ---- | ------- | ------- |

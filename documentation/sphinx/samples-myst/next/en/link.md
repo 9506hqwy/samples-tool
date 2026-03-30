@@ -2,15 +2,15 @@
 
 ## Link to Section
 
-See [Sub Section 1](./intro.md#section_section1_subsection1).
+See [Sub Section 1](#en_section_section1_subsection1).
 
 ## Link to Graph
 
-See {numref}`fig-02`.
+See {numref}`en-fig-02`.
 
 ## Link to Table
 
-See {numref}`table-01`.
+See {numref}`en-table-01`.
 
 ## Link to External
 

@@ -6,6 +6,6 @@ Reference
 Citation
 ==============================================================================
 
-Output [REF01]_ to reference documents chapter by PDF format.
+Output [EN_REF01]_ to reference documents chapter by PDF format.
 
-.. [REF01] Reference Document 01
+.. [EN_REF01] Reference Document 01

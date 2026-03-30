@@ -32,11 +32,20 @@ Build static documents.
 uv run sphinx-build -M html . _build
 ```
 
+Export PDF.
+
+```sh
+podman run \
+    --rm \
+    -v "$(pwd):/docs:Z" \
+    sphinxdoc/sphinx-latexpdf \
+    /bin/bash _script/build_pdf.sh
+```
+
 ## TODO
 
 - Show the ToC of documents other than the default document in sidebar.
 - Improve duplicate cross reference name.
-- Export PDF format.
 
 ## References
 
