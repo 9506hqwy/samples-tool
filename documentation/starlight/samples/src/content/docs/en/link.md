@@ -25,4 +25,3 @@ See [Sub Section 1](/en/intro#sub-section-1).
 - [starlight-to-pdf]
 
 [starlight-to-pdf]: https://github.com/Linkerin/starlight-to-pdf
-.IThe link destination is URI.

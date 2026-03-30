@@ -50,9 +50,10 @@ npm run preview
 
 ## TODO
 
-- Export PDF format.
 - Improve the link to another document.
 - Assign section numbering automatically.
+- Insert images to PDF output.
+- Customize the PDF output. e.g. cover, toc, layout.
 - Use MDX.
 
 ## Notes

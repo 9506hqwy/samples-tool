@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightGitHubAlerts from 'starlight-github-alerts'
 import starlightVersions from 'starlight-versions'
+import pdf from 'astro-pdf'
 
 // https://astro.build/config
 export default defineConfig({
@@ -38,6 +39,29 @@ export default defineConfig({
                     },
                 }),
             ],
+        }),
+        pdf({
+            pages: {
+                '/en/intro': {},
+                '/en/graph_table': {},
+                '/en/link': {},
+                '/en/reference': {},
+                '/ja/intro': {},
+                '/ja/graph_table': {},
+                '/ja/link': {},
+                '/ja/reference': {},
+            },
+            launch: {
+                args: ['--no-sandbox'],
+            },
+            baseOptions: {
+                path: '/pdf[pathname].pdf',
+                throwOnFail: true,
+                waitUntil: 'networkidle0',
+                pdf: {
+                    format: 'A4'
+                },
+            },
         }),
     ],
 });
