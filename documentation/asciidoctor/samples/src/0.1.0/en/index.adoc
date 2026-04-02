@@ -1,0 +1,7 @@
+= Asciidoctor Samples (en)
+:toc: left
+:toc-title: Contents
+:toclevels: 2
+:sectnums:
+
+include::intro.adoc[leveloffset=1]

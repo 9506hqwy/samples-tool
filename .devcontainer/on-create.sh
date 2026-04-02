@@ -7,7 +7,13 @@ sudo chmod 1777 /tmp
 
 # Install dependencies
 sudo apt-get update
-sudo apt-get install -y chromium fonts-noto-cjk zstd
+sudo apt-get install -y \
+    asciidoctor \
+    chromium \
+    fonts-ipaexfont \
+    fonts-noto-cjk \
+    ruby-asciidoctor-pdf \
+    zstd
 
 # Configuration PATH
 mkdir -p ~/.local/bin

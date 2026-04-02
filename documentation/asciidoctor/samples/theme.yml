@@ -1,0 +1,18 @@
+extends: default
+font:
+  catalog:
+    merge: true
+    IPAex: fonts-japanese-gothic.ttf
+  fallbacks:
+  - Noto Serif
+base:
+  text-align: left
+  font-family: IPAex
+codespan:
+  font-family: IPAex
+kbd:
+  font-family: $codespan-font-family
+code:
+  font-family: $codespan-font-family
+caption:
+  align: center

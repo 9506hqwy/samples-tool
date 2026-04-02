@@ -1,0 +1,14 @@
+= Asciidoctor Samples (ja)
+:toc: left
+:toc-title: 目次
+:toclevels: 2
+:sectnums:
+:source-highlighter: highlight.js
+:figure-caption: 図
+:table-caption: 表
+:warning-caption: 警告
+
+include::intro.adoc[leveloffset=1]
+include::graph_table.adoc[leveloffset=1]
+include::link.adoc[leveloffset=1]
+include::reference.adoc[leveloffset=1]

@@ -1,5 +1,6 @@
 {
     "recommendations": [
+        "asciidoctor.asciidoctor-vscode",
         "astro-build.astro-vscode",
         "davidanson.vscode-markdownlint",
         "editorconfig.editorconfig",
