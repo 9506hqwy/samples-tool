@@ -1,0 +1,14 @@
+name: antora-samples-ja
+version: next
+title: Antora Samples
+asciidoc:
+  attributes:
+    toc: left
+    toc-title: 目次
+    toclevels: 2
+    sectnums: all
+    figure-caption: 図
+    table-caption: 表
+    warning-caption: 警告
+nav:
+- modules/ROOT/nav.adoc

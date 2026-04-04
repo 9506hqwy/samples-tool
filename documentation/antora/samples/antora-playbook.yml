@@ -1,0 +1,24 @@
+site:
+  title: Antora Samples
+  url: http://localhost:8080
+content:
+  sources:
+  - url: ../../../
+    start_path: documentation/antora/samples/0.1.0/en
+    branches: HEAD
+  - url: ../../../
+    start_path: documentation/antora/samples/0.1.0/ja
+    branches: HEAD
+  - url: ../../../
+    start_path: documentation/antora/samples/next/en
+    branches: HEAD
+  - url: ../../../
+    start_path: documentation/antora/samples/next/ja
+    branches: HEAD
+antora:
+  extensions:
+  - '@antora/pdf-extension'
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true

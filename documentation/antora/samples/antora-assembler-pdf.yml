@@ -1,0 +1,6 @@
+enabled: true
+assembly:
+  attributes:
+    scripts: cjk
+    pdf-theme: ./theme.yml
+    pdf-fontsdir: /usr/share/fonts/truetype

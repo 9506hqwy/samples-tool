@@ -1,0 +1,11 @@
+name: antora-samples-en
+version: next
+title: Antora Samples
+asciidoc:
+  attributes:
+    toc: left
+    toc-title: Contents
+    toclevels: 2
+    sectnums: all
+nav:
+- modules/ROOT/nav.adoc

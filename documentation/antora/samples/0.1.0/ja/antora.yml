@@ -1,0 +1,5 @@
+name: antora-samples-ja
+version: 0.1.0
+title: Antora Samples
+nav:
+- modules/ROOT/nav.adoc

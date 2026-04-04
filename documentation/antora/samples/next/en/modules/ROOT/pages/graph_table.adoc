@@ -1,0 +1,32 @@
+= Graph and Table
+
+== Graph
+
+Insert graph.
+
+.Figure Title 01
+[#fig-02]
+image::.//mark_koujichu.png[img,313,313,align=center]
+
+== Table
+
+Insert table.
+
+.Grid Table
+[#table-01]
+[cols="1,1,1",stripes=even]
+|===
+| | Column 1 | Column 2
+
+| Row 1
+| Cell 11
+| Cell 12
+
+| Row 2
+| Cell 21
+| Cell 22
+
+| Row 3
+| Cell 31
+| Cell 32
+|===

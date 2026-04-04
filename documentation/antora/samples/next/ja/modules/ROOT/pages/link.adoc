@@ -1,0 +1,19 @@
+= リンク
+:AsciiDoc: https://asciidoc.org/
+
+== セクションへのリンク
+
+xref:intro.adoc#section_section1_subsection1[サブセクション1] にリンクを張る。
+
+== 図へのリンク
+
+xref:graph_table.adoc#fig-02[図のタイトル01] にリンクを張る。
+
+== 表へのリンク
+
+xref:graph_table.adoc#table-01[グリッド表] にリンクを張る。
+
+== 外部へのリンク
+
+- https://asciidoctor.org/[Asciidoctor]
+- {AsciiDoc}[AsciiDoc]
