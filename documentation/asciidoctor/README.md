@@ -26,7 +26,10 @@ Export PDF.
 ```sh
 asciidoctor-pdf \
     -a data-uri \
+    -a doctype=book \
+    -a chapter-signifier \
     -a scripts=cjk \
+    -a source-highlighter=rouge \
     -a pdf-theme=./theme.yml \
     -a pdf-fontsdir=/usr/share/fonts/truetype \
     -D _build \
@@ -40,8 +43,8 @@ asciidoctor-pdf \
 - Add locale selector.
 - Add version selector.
 - Align graph and table caption to center in HTML.
-- Customize the PDF output. e.g. cover, toc, layout.
 
 ## References
 
 - [Asciidoctor](https://asciidoctor.org/)
+- [Asciidoctor PDF Documentation](https://docs.asciidoctor.org/pdf-converter/latest/)

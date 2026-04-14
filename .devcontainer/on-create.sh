@@ -13,6 +13,7 @@ sudo apt-get install -y \
     fonts-ipaexfont \
     fonts-noto-cjk \
     ruby-asciidoctor-pdf \
+    ruby-rouge \
     zstd
 
 # Configuration PATH

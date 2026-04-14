@@ -1,4 +1,8 @@
 = Asciidoctor Samples (ja)
+:author: 9506hqwy
+:email: 97424592+9506hqwy@users.noreply.github.com
+:revnumber: 0.1.0
+:revdate: {docdate}
 :toc: left
 :toc-title: 目次
 :toclevels: 2
@@ -7,6 +11,7 @@
 :figure-caption: 図
 :table-caption: 表
 :warning-caption: 警告
+:version-label: バージョン
 
 include::intro.adoc[leveloffset=1]
 include::graph_table.adoc[leveloffset=1]
