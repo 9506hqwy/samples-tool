@@ -1,6 +1,12 @@
 enabled: true
+component_version_filter:
+  names:
+    - next@*
 assembly:
   attributes:
+    chapter-signifier:
     scripts: cjk
+    source-highlighter: rouge
     pdf-theme: ./theme.yml
     pdf-fontsdir: /usr/share/fonts/truetype
+  section_merge_strategy: fuse

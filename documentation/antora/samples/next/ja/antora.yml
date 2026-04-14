@@ -3,6 +3,8 @@ version: next
 title: Antora Samples
 asciidoc:
   attributes:
+    author: 9506hqwy
+    email: 97424592+9506hqwy@users.noreply.github.com
     toc: left
     toc-title: 目次
     toclevels: 2
@@ -10,5 +12,6 @@ asciidoc:
     figure-caption: 図
     table-caption: 表
     warning-caption: 警告
+    version-label: バージョン
 nav:
 - modules/ROOT/nav.adoc

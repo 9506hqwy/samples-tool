@@ -36,12 +36,16 @@ Run development server.
 npx http-server build/site -c-1
 ```
 
+## Notes
+
+- Enable antora support in workspace using vscode ([#855](https://github.com/asciidoctor/asciidoctor-vscode/issues/855)).
+
 ## TODO
 
 - Customize theme.
-- Assign section numbering automatically.
-- Customize the PDF output. e.g. cover, toc, layout.
+- Improve the link title.
 
 ## References
 
 - [Antora](https://antora.org/)
+- [Antora Assembler](https://gitlab.com/antora/antora-assembler)
