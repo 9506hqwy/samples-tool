@@ -1,6 +1,7 @@
 name: antora-samples-en
 version: next
-title: Antora Samples
+title: Antora Samples (en)
+start_page: intro.adoc
 asciidoc:
   attributes:
     toc: left

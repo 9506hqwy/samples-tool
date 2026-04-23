@@ -1,5 +1,6 @@
 name: antora-samples-en
 version: 0.1.0
-title: Antora Samples
+title: Antora Samples (en)
+start_page: intro.adoc
 nav:
 - modules/ROOT/nav.adoc

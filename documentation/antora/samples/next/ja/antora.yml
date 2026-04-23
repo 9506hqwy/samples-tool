@@ -1,6 +1,7 @@
 name: antora-samples-ja
 version: next
-title: Antora Samples
+title: Antora Samples (ja)
+start_page: intro.adoc
 asciidoc:
   attributes:
     author: 9506hqwy

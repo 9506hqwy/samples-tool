@@ -39,11 +39,7 @@ npx http-server build/site -c-1
 ## Notes
 
 - Enable antora support in workspace using vscode ([#855](https://github.com/asciidoctor/asciidoctor-vscode/issues/855)).
-
-## TODO
-
-- Customize theme.
-- Improve the link title.
+- Require to set link test when using fragment ([Page Link Text](https://docs.antora.org/antora/latest/page/link-content/)).
 
 ## References
 

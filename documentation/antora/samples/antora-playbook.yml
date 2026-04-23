@@ -1,6 +1,7 @@
 site:
   title: Antora Samples
   url: http://localhost:8080
+  start_page: antora-samples-ja::intro.adoc
 content:
   sources:
   - url: ../../../
@@ -22,3 +23,13 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+  supplemental_files:
+    - path: partials/header-content.hbs
+      contents: |
+        <header class="header">
+          <nav class="navbar">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="{{{or site.url siteRootPath}}}">{{site.title}}</a>
+            </div>
+          </nav>
+        </header>
