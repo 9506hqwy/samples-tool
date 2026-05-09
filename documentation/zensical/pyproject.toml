@@ -5,5 +5,5 @@ description = "Zensical Document"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "zensical>=0.0.28",
+    "zensical>=0.0.40",
 ]
