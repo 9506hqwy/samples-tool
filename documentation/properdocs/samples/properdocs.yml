@@ -1,0 +1,11 @@
+site_name: ProperDocs Samples
+nav:
+  - Intro: intro.md
+  - Graph and Table: graph_table.md
+  - Links: link.md
+  - Reference: reference.md
+markdown_extensions:
+  - admonition
+  - pymdownx.blocks.caption
+  - pymdownx.highlight
+  - pymdownx.superfences
