@@ -41,6 +41,6 @@ curl -fsSL -o - "https://astral.sh/uv/install.sh" | sh
 uv python install 3.13 3.14
 
 # Install maven.
-# Do not use java feature because /tmp is changed permission to 755.
+# Do not use java feature because /tmp permission is changed to 755.
 set +eu
 umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven 3.9.16
