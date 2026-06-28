@@ -5,6 +5,7 @@
         "davidanson.vscode-markdownlint",
         "editorconfig.editorconfig",
         "evilz.vscode-reveal",
+        "jetpack-io.devbox",
         "karatelabs.karate",
         "marp-team.marp-vscode",
         "ms-python.python",
