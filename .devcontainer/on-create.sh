@@ -1,10 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-# Avoid occurring error.
-# Unable to mkstemp /tmp/apt.sig.x1YltF - GetTempFile (13: Permission denied)
-sudo chmod 1777 /tmp
-
 # Install dependencies
 sudo apt-get update
 sudo apt-get install -y \
@@ -43,3 +39,8 @@ curl -fsSL -o - "https://astral.sh/uv/install.sh" | sh
 
 # Install python 3.13, 3.14
 uv python install 3.13 3.14
+
+# Install maven.
+# Do not use java feature because /tmp is changed permission to 755.
+set +eu
+umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven 3.9.16

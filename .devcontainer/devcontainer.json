@@ -5,10 +5,6 @@
     "image": "mcr.microsoft.com/devcontainers/java:21-trixie",
     // Add features.
     "features": {
-        "ghcr.io/devcontainers/features/java:1": {
-            "version": "none",
-            "installMaven": true
-        },
         "ghcr.io/devcontainers/features/node:1": {
             "nodeGypDependencies": false
         }
