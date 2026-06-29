@@ -10,13 +10,13 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@astrojs/starlight": "^0.39.2",
+        "@astrojs/starlight": "^0.40.0",
         "astro": "^6.4.8",
-        "sharp": "^0.34.5",
-        "starlight-github-alerts": "^0.2.0",
+        "sharp": "^0.35.2",
+        "starlight-github-alerts": "^0.3.0",
         "starlight-versions": "^0.9.0"
     },
     "devDependencies": {
-        "astro-pdf": "^1.8.0"
+        "astro-pdf": "^1.10.0"
     }
 }
