@@ -208,6 +208,23 @@ Exit devbox environemnt.
 exit
 ```
 
+Activate devbox automatically using `direnv`.
+
+```sh
+devbox generate direnv
+```
+
+```text
+Info: Ensuring packages are installed.
+✓ Computed the Devbox environment.
+Success: generated .envrc file in "".
+Success: ran `direnv allow `
+direnv: loading ~/projects/samples-tool/environment/devbox/env01/.envrc
+direnv: using devbox
+Virtual environment directory doesn't exist. Creating new one...
+direnv: export ...
+```
+
 ## References
 
 - [Devbox](https://github.com/jetify-com/devbox)

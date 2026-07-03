@@ -5,9 +5,9 @@
         "davidanson.vscode-markdownlint",
         "editorconfig.editorconfig",
         "evilz.vscode-reveal",
-        "jetpack-io.devbox",
         "karatelabs.karate",
         "marp-team.marp-vscode",
+        "mkhl.direnv",
         "ms-python.python",
         "yzhang.markdown-all-in-one"
     ]
