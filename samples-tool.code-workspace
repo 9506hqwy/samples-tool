@@ -1,0 +1,62 @@
+{
+    "folders": [
+        {
+            "name": "samples-tool",
+            "path": "."
+        },
+        {
+            "path": "database/documentdb"
+        },
+        {
+            "path": "database/spanner"
+        },
+        {
+            "path": "documentation/antora"
+        },
+        {
+            "path": "documentation/asciidoctor"
+        },
+        {
+            "path": "documentation/docusaurus"
+        },
+        {
+            "path": "documentation/mkdocs"
+        },
+        {
+            "path": "documentation/properdocs"
+        },
+        {
+            "path": "documentation/sphinx"
+        },
+        {
+            "path": "documentation/starlight"
+        },
+        {
+            "path": "documentation/zensical"
+        },
+        {
+            "path": "environment/devbox"
+        },
+        {
+            "path": "environment/direnv"
+        },
+        {
+            "path": "iam/keycloak"
+        },
+        {
+            "path": "presentation/marp"
+        },
+        {
+            "path": "presentation/revealjs"
+        },
+        {
+            "path": "testing/karate"
+        },
+        {
+            "path": "uia/pywinauto"
+        },
+        {
+            "path": "uia/win-app-driver"
+        }
+    ]
+}

@@ -2,15 +2,6 @@
     "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
     "editor.formatOnType": false,
-    "files.exclude": {
-        "database": true,
-        "documentation": true,
-        "environment": true,
-        "iam": true,
-        "presentation": true,
-        "testing": true,
-        "uia": true
-    },
     "[markdown]": {
         "editor.codeActionsOnSave": {
             "source.fixAll.markdownlint": "explicit"
