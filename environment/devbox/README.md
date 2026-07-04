@@ -225,6 +225,15 @@ Virtual environment directory doesn't exist. Creating new one...
 direnv: export ...
 ```
 
+## Notes
+
+- Prefer not to send telemetry data, set environment variable
+  (see [Devbox 0.0.4 is released!](https://www.jetify.com/blog/devbox-0-0-4-is-released)).
+
+  ```sh
+  export DO_NOT_TRACK=1
+  ```
+
 ## References
 
 - [Devbox](https://github.com/jetify-com/devbox)
