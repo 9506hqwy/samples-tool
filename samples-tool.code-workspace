@@ -50,6 +50,9 @@
             "path": "presentation/revealjs"
         },
         {
+            "path": "task-runner/just"
+        },
+        {
             "path": "testing/karate"
         },
         {
