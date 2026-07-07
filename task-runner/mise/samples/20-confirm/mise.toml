@@ -1,0 +1,4 @@
+[tasks.hello-world]
+# メッセージを指定する。
+confirm = '"message ? [y/n]'
+run = 'echo "Hello, World!"'

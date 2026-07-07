@@ -1,0 +1,6 @@
+# 作業ディレクトリを指定する。
+[task_config]
+dir = "/"
+
+[tasks.default-working-directory]
+run = 'pwd'

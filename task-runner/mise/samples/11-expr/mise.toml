@@ -1,0 +1,15 @@
+# 変数を定義する。
+[vars]
+target = "World"
+
+[tasks.hello-var]
+# 変数を使用する。
+run = 'echo "Hello, {{ vars.target }}"!'
+
+[tasks.hello-expr]
+# tera 構文を利用する。
+run = '''
+{% if "hello" == "hello" %}
+  echo "Hello, World!"
+{% endif %}
+'''

@@ -1,0 +1,16 @@
+[tasks.work01]
+run = [
+    # 1. work02 を実行する。
+    { task = "work02" },
+    # 2. work03, work04 を並列に実行する。
+    { tasks = ["work03", "work04"] },
+]
+
+[tasks.work02]
+run = 'echo "work02"'
+
+[tasks.work03]
+run = 'echo "work03"'
+
+[tasks.work04]
+run = 'echo "work04"'

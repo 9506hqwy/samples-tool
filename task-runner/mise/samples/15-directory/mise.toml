@@ -1,0 +1,8 @@
+# mise.tom があるディレクトリで実行される。
+[tasks.default-working-directory]
+run = 'pwd'
+
+# コマンドを実行したディレクトリで実行される。
+[tasks.current-directory]
+run = 'pwd'
+dir = "{{cwd}}"

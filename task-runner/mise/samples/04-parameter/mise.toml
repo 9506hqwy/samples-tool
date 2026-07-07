@@ -1,0 +1,35 @@
+[tasks.hello]
+# 位置指定引数を定義する。
+usage = '''
+arg "<target>"
+'''
+run = 'echo "Hello, ${usage_target}!"'
+
+# 環境変数を利用して既定値を設定する。
+[tasks.hello-default]
+usage = '''
+arg "<target>" env=TARGET default="World"
+'''
+run = 'echo "Hello, ${usage_target}!"'
+
+# 可変長の引数を指定する。
+[tasks.hello-quantifier]
+usage = '''
+arg "<targets>" var=#true
+'''
+run = 'echo "Hello, ${usage_targets}!"'
+
+[tasks.hello-option]
+# オプション引数を定義する。
+usage = '''
+flag "--target <target>" default="World"
+'''
+run = 'echo "Hello, ${usage_target}!"'
+
+[tasks.hello-option-default]
+# 値を取らないオプション引数を指定する。
+# 値は true / false になる。
+usage = '''
+flag "--target"
+'''
+run = 'echo "Hello, ${usage_target}!"'

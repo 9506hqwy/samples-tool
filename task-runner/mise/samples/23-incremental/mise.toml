@@ -1,0 +1,5 @@
+[tasks.work01]
+# outputs より inputs が新しい場合のみ実行する。
+sources = ["input.txt"]
+outputs = ["output.txt"]
+run = 'cp -f input.txt output.txt'

@@ -1,0 +1,11 @@
+[tasks.hello-world]
+run = [{ tasks = ["work01", "work02", "work03"] }]
+
+[tasks.work01]
+run = 'echo "work01"'
+
+[tasks.work02]
+run = 'echo "work02"'
+
+[tasks.work03]
+run = 'echo "work03"'

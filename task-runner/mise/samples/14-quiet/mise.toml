@@ -1,0 +1,4 @@
+[tasks.hello-world]
+run = 'echo "Hello, World"!'
+# タスクごとに quiet を指定する。
+quiet = true

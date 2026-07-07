@@ -1,0 +1,41 @@
+[tasks.work01]
+# 依存関係のタスクを指定する。
+depends = ["depend01"]
+run = 'echo "World!"'
+
+[tasks.depend01]
+run = 'echo "Hello"'
+
+[tasks.work02]
+depends = ["depend01"]
+# 指定したタスクは work02 の実行後の実行される。
+depends_post = ["depend02"]
+run = 'echo "World"'
+
+[tasks.depend02]
+run = 'echo "!"'
+
+[tasks.work03]
+# 実行対象に depend03 がある場合のみ依存関係のタスクを指定する。
+wait_for = ["depend03"]
+run = 'echo "World!"'
+
+[tasks.depend03]
+run = 'echo "Hello"'
+
+[tasks.work04]
+# 別のディレクトリにあるタスクを指定する。
+# TODO: occur error.
+# relative path syntax '../01-basic:hello-world' is not supported, use '//../01-basic:hello-world'  or ':task' for current directory
+# モノレポのみ?
+depends = ["../01-basic:hello-world"]
+run = 'echo "work04"'
+
+[tasks.work05]
+depends = ["depend05"]
+run = 'echo "World!"'
+
+[tasks.depend05]
+# 隠しタスクは既定で非表示になる。
+hide = true
+run = 'echo "Hello"'

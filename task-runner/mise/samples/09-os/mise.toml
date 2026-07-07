@@ -1,0 +1,3 @@
+[tasks.hello-world]
+run = 'echo "Hello, Linux!"'
+run_windows = 'echo "Hello, Windows!"'

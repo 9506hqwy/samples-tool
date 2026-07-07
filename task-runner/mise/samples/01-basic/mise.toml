@@ -1,0 +1,40 @@
+[tasks.hello-world]
+run = 'echo "Hello, World!"'
+
+[tasks.hello-world-ja]
+run = 'echo "Hello, 世界!"'
+
+[tasks.hello-world-multi]
+# 配列で複数のコマンドを実行する。
+run = ['echo "Hello"', 'echo "World!"']
+# エイリアスを指定する。
+alias = 'h'
+
+[tasks.hello-world-py]
+# shebang を指定して実行するシェルを記述する。
+# shabang がない場合は bash になる。
+run = """
+#!/usr/bin/env python3
+print("Hello, World!")
+"""
+
+[tasks.hello-world-bash]
+# shebang を指定して複数行のコマンドを記述する。
+run = """
+#!/bin/bash
+for name in World 世界
+do
+    echo "Hello, ${name}!"
+done
+"""
+
+[tasks.hello-world-script]
+# スクリプトファイルを実行する。
+file = "scripts/hello-world-script.sh"
+
+# 下記のファイルをタスクとして認識する。
+# - mise-tasks/<タスク名>
+# - .mise-tasks/<タスク名>
+# - mise/tasks/<タスク名>
+# - .mise/tasks/<タスク名>
+# - .config/mise/tasks/<タスク名>

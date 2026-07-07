@@ -1,0 +1,4 @@
+#!/bin/bash
+# #MISE コメントを追加することでタスクの属性を設定する。
+#MISE env = { target = "World" }
+echo "Hello, ${target}! in file."
