@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  hello:
+    requires:
+      vars:
+        # 必須な引数を定義する。
+        - TARGET
+    cmds:
+      # 変数を使用する。
+      - echo "Hello, {{.TARGET}}!"

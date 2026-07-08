@@ -1,0 +1,15 @@
+version: '3'
+
+# 同じコマンドでプラットフォームごとに切り替えるには
+# xxx_{{OS}}.yaml を利用してプラットフォームごとに taskfile を分けて include する。
+tasks:
+  hello-world-windows:
+    # OSごとにタスクを分けることができる。
+    platforms: [windows]
+    cmd: echo "Hello, Windows!"
+
+  hello-world-linux:
+    # OSごとにタスクを分けることができる。
+    platforms: [linux]
+    cmd: echo "Hello, Linux!"
+

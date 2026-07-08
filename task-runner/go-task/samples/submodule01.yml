@@ -1,0 +1,10 @@
+version: '3'
+
+tasks:
+  work01:
+    cmds:
+      - echo "work01"
+
+  work02:
+    cmds:
+      - echo "work02"

@@ -1,0 +1,11 @@
+version: '3'
+
+includes:
+  basic:
+    taskfile: ./01-basic.yml
+    flatten: true
+
+tasks:
+  hello-world-import:
+    cmds:
+      - task: hello-world

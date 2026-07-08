@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  hello-world:
+    # メッセージを指定する。
+    prompt: message ?
+    cmd: echo "Hello, World!"

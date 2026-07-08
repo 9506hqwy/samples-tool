@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  hello-quiet:
+    cmds:
+      - echo "Hello, World!"
+    # タスクごとに quiet を指定する。
+    silent: true

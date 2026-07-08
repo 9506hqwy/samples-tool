@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  # タスクがあるディレクトリで実行される。
+  default-working-directory:
+    cmds:
+      - pwd
+
+  home-directory:
+    cmds:
+      - pwd
+    # 作業ディレクトリを指定する。
+    dir: /

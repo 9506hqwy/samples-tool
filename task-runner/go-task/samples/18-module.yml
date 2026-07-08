@@ -1,0 +1,9 @@
+version: '3'
+
+includes:
+  submodule01: ./submodule01.yml
+
+tasks:
+  hello-world-module:
+    cmds:
+      - task: submodule01:work01

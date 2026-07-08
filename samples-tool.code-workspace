@@ -50,6 +50,9 @@
             "path": "presentation/revealjs"
         },
         {
+            "path": "task-runner/go-task"
+        },
+        {
             "path": "task-runner/just"
         },
         {

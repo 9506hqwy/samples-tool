@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  hello-world:
+    cmds:
+      - echo "Hello, World!"
+
+  hello-world-ja:
+    cmds:
+      - echo "Hello, 世界!"
+
+  hello-world-multi:
+    # エイリアスを指定する。
+    aliases: [h]
+    # 複数コマンドを順に実行する。
+    cmds:
+      - echo "Hello"
+      - echo "World!"
+
+  hello-world-bash:
+    # 複数行のコマンドを指定する。
+    cmds:
+      - |
+        for name in World 世界
+            do
+            echo "Hello, ${name}!"
+        done

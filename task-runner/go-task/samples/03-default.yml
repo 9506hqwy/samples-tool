@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  # 引数なしで実行するタスクを指定する。
+  default:
+    cmds:
+      - echo "Hello, World!"

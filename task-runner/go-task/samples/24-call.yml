@@ -1,0 +1,19 @@
+version: '3'
+
+tasks:
+  work01:
+    cmds:
+      # シーケンシャルに実行する。
+      # 並列で実行する場合は deps で依存関係を指定する。
+      - task: work02
+      - task: work03
+      - task: work04
+
+  work02:
+    cmd: echo "work02"
+
+  work03:
+    cmd: echo "work03"
+
+  work04:
+    cmd: echo "work04"

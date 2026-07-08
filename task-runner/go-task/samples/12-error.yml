@@ -1,0 +1,25 @@
+version: '3'
+
+tasks:
+  work-failed:
+    deps: [failed]
+    cmd: echo "work01"
+
+  failed:
+    cmds:
+      - echo "failed start"
+      # エラーが発生すると止まる。
+      - test 1 -ne 1
+      - echo "failed end"
+
+  work-ignore:
+    deps: [ignore]
+    cmd: echo "work01"
+
+  ignore:
+    cmds:
+      - echo "ignore start"
+      - test 1 -ne 1
+      - echo "ignore end"
+    # エラーを無視する。
+    ignore_error: true

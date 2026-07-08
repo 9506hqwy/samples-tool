@@ -1,0 +1,20 @@
+version: '3'
+
+tasks:
+  work01:
+    # 依存関係のタスクを指定する。
+    deps: [depend01]
+    cmd: echo "World!"
+
+  depend01:
+    cmd: echo "Hello"
+
+  work02:
+    deps: [depend01]
+    cmds:
+      # 指定したタスクは work02 の実行後の実行される。
+      - defer: { task: depend02 }
+      - echo "World"
+
+  depend02:
+    cmd: echo "!"

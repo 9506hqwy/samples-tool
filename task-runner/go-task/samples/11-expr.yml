@@ -1,0 +1,22 @@
+version: '3'
+
+vars:
+  # 変数を定義する。
+  world: World
+
+tasks:
+  hello-world-var:
+    # 変数を使用する。
+    cmd: echo "Hello, {{.world}}!"
+
+  hello-world-if:
+    # 条件に一致する場合に実行する。
+    if: '[ "hello" != "hello" ]'
+    cmd: echo "Hello, World!"
+
+
+  hello-world-for:
+    cmds:
+      # ループする。
+      - for: ["world", "世界"]
+        cmd: echo "Hello, {{.ITEM}}!"

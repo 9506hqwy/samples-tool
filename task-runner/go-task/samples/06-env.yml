@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  export:
+    cmds:
+      - echo "Hello, ${env01}!"
+    # 環境変数を定義する。
+    env:
+      env01: World

@@ -1,0 +1,12 @@
+version: '3'
+
+tasks:
+  # 既定でチェックサムが異なる場合のみ実行する。
+  # method に timestamp を指定することで時間に変更できる。
+  work01:
+    cmds:
+      - cp -f input.txt output.txt
+    sources:
+      - input.txt
+    generates:
+      - output.txt
