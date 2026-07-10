@@ -41,6 +41,9 @@
             "path": "environment/direnv"
         },
         {
+            "path": "git-hook-manager/prek"
+        },
+        {
             "path": "iam/keycloak"
         },
         {

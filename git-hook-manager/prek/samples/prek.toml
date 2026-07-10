@@ -1,0 +1,46 @@
+[[repos]]
+# URL: リモートリポジトリに定義された hook
+# local: ローカルリポジトリ内にインラインで定義された hook
+# builtin: prek 内に定義された hook
+repo = "local"
+
+[[repos.hooks]]
+id = "hook01"
+name = "hook01"
+# ローカル環境を利用する。
+language = "system"
+# 対象のファイルが引数に追加される。
+entry = "echo"
+# 対象のファイルパターンを指定する。
+files = ".*"
+
+[[repos.hooks]]
+id = "hook02"
+name = "hook02"
+language = "system"
+entry = "sleep 1"
+# entry に引数を渡さない。
+pass_filenames = false
+files = "\\.ts$"
+
+[[repos.hooks]]
+id = "hook03"
+name = "hook03"
+language = "system"
+# スクリプトを記述する。
+entry = """
+VALUE=World
+echo Hello, ${VALUE}!
+"""
+# 実行するシェルを指定する。
+# 指定しない場合は entry が直接実行される。
+shell = "bash"
+pass_filenames = false
+
+
+[[repos]]
+repo = "builtin"
+
+[[repos.hooks]]
+# 定義済みの hook を利用する。
+id = "fix-byte-order-marker"

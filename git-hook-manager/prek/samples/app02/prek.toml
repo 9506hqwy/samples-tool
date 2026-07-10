@@ -1,0 +1,19 @@
+# 親ディレクトリは参照しない。
+orphan = true
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "hook01"
+name = "hook01"
+language = "system"
+entry = "cat"
+files = "\\.py*"
+
+[[repos.hooks]]
+id = "hook02"
+name = "hook02"
+language = "system"
+entry = "echo"
+files = "\\.go*"
