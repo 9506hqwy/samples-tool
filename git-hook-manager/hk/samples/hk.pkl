@@ -1,0 +1,53 @@
+amends "package://github.com/jdx/hk/releases/download/v1.50.0/hk@1.50.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.50.0/hk@1.50.0#/Builtins.pkl"
+
+local app01 = new Group {
+    dir = "app01"
+    steps {
+        ["hook01"] {
+            glob = "*.py"
+            check = "cat {{ files }}"
+        }
+        ["hook02"] {
+            glob = "*.go"
+            check = "echo {{ files }}"
+        }
+    }
+}
+
+local app02 = new Group {
+    dir = "app02"
+    steps {
+        ["hook01"] {
+            glob = "*.py"
+            check = "cat {{ files }}"
+        }
+        ["hook02"] {
+            glob = "*.go"
+            check = "echo {{ files }}"
+        }
+    }
+}
+
+local linters = new Mapping<String, Step> {
+    ["app01"] = app01
+    ["app02"] = app02
+    ["hook01"] {
+        glob = "**/*"
+        check = "echo {{ files }}"
+    }
+}
+
+hooks {
+    ["pre-commit"] {
+        stash = "git"
+        steps = linters
+    }
+    ["fix"] {
+        fix = true
+        steps = linters
+    }
+    ["check"] {
+        steps = linters
+    }
+}
