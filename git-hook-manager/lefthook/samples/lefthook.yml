@@ -1,0 +1,21 @@
+
+extends:
+  - app01/lefthook.yml
+  - app02/lefthook.yml
+
+pre-commit:
+  jobs:
+    - name: hook01
+      # ステージングされたファイルを渡す。
+      run: echo {staged_files}
+
+    - name: hook02
+      glob: "*.ts"
+      # 引数を渡さない。
+      run: sleep 1
+
+    - name: hook03
+      # スクリプトを記述する。
+      run: |
+        VALUE=World
+        echo Hello, ${VALUE}!

@@ -1,0 +1,12 @@
+pre-commit:
+  jobs:
+    - name: app01-hook01
+      run: cat {staged_files}
+      # app01 ディレクトリを対象とする。
+      root: app01
+      glob: "*.py"
+
+    - name: app01-hook02
+      run: echo {staged_files}
+      root: app01
+      glob: "*.go"
