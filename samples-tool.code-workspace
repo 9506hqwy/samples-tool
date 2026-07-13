@@ -41,6 +41,9 @@
             "path": "environment/direnv"
         },
         {
+            "path": "environment/mise"
+        },
+        {
             "path": "git-hook-manager/hk"
         },
         {
