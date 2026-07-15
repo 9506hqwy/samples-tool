@@ -1,0 +1,1 @@
+# for-each-repo コマンド

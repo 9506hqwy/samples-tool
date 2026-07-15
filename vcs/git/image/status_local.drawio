@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:142.0) Gecko/20100101 Firefox/142.0" version="27.1.1">
+  <diagram name="ページ1" id="cH6qZ-zx2YoEyYHjflWt">
+    <mxGraphModel dx="957" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <object label="エリア" id="1">
+          <mxCell style="locked=1;" parent="0" />
+        </object>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-1" value="作業ディレクトリ" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry width="200" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-2" value="ステージング・エリア" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" width="200" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-3" value="データベース" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" width="200" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-5" value="コマンド" style="locked=1;" parent="0" />
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-6" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;opacity=30;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="60" y="54" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-7" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="260" y="54" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-8" value="git add" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=35.29;notch=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="140" y="54" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-9" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;opacity=30;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="260" y="140" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-10" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="460" y="140" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-11" value="git commit" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=35.29;notch=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="340" y="140" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-12" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;opacity=30;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="260" y="230" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-13" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="60" y="230" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-14" value="git restore" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=35.29;notch=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;flipH=1;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="140" y="230" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-15" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;opacity=30;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="460" y="320" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-16" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="260" y="320" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-17" value="git reset [--mixed]" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=35.29;notch=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=default;flipH=1;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="340" y="320" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-18" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;opacity=30;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="460" y="410" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-19" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="60" y="410" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-20" value="git reset --hard" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=35.29;notch=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;flipH=1;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="140" y="410" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-21" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;opacity=30;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="460" y="500" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-22" value="ファイル" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="60" y="500" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IBOZ7tCWoLS5ZWnu5gPE-23" value="git switch &amp;lt;ブランチ&amp;gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=35.29;notch=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;flipH=1;" vertex="1" parent="IBOZ7tCWoLS5ZWnu5gPE-5">
+          <mxGeometry x="140" y="500" width="310" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

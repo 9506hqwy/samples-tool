@@ -78,6 +78,9 @@
         },
         {
             "path": "uia/win-app-driver"
+        },
+        {
+            "path": "vcs/git"
         }
     ]
 }
