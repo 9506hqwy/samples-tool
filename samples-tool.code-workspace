@@ -81,6 +81,9 @@
         },
         {
             "path": "vcs/git"
+        },
+        {
+            "path": "vcs/jj"
         }
     ]
 }
