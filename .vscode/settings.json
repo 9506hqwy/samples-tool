@@ -9,6 +9,7 @@
         "git-hook-manager": true,
         "iam": true,
         "presentation": true,
+        "sandbox": true,
         "task-runner": true,
         "testing": true,
         "uia": true,

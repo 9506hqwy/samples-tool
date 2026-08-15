@@ -62,6 +62,9 @@
             "path": "presentation/revealjs"
         },
         {
+            "path": "sandbox/bubblewrap"
+        },
+        {
             "path": "task-runner/go-task"
         },
         {
