@@ -40,6 +40,12 @@ curl -fsSL -o - "https://astral.sh/uv/install.sh" | sh
 # Install python 3.13, 3.14
 uv python install 3.13 3.14
 
+# Install PowerShell
+PWSH_VERSION="7.6.5"
+curl -fsSLO --output-dir /tmp "https://github.com/PowerShell/PowerShell/releases/download/v${PWSH_VERSION}/powershell_${PWSH_VERSION}-1.deb_amd64.deb"
+sudo dpkg -i "/tmp/powershell_${PWSH_VERSION}-1.deb_amd64.deb"
+rm "/tmp/powershell_${PWSH_VERSION}-1.deb_amd64.deb"
+
 # Install maven.
 # Do not use java feature because /tmp permission is changed to 755.
 set +eu
