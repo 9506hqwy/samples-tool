@@ -74,6 +74,9 @@
             "path": "task-runner/mise"
         },
         {
+            "path": "testing/bats"
+        },
+        {
             "path": "testing/karate"
         },
         {
