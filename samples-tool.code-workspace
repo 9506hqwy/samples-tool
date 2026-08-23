@@ -17,6 +17,9 @@
             "path": "documentation/asciidoctor"
         },
         {
+            "path": "documentation/blume"
+        },
+        {
             "path": "documentation/docusaurus"
         },
         {

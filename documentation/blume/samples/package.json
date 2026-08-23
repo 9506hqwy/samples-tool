@@ -1,0 +1,14 @@
+{
+    "name": "samples",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "blume dev",
+        "build": "blume build",
+        "doctor": "blume doctor",
+        "preview": "blume preview"
+    },
+    "dependencies": {
+        "blume": "^1.5.3"
+    }
+}
