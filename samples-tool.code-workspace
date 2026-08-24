@@ -44,6 +44,9 @@
             "path": "environment/direnv"
         },
         {
+            "path": "environment/flox"
+        },
+        {
             "path": "environment/mise"
         },
         {
