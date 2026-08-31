@@ -8,6 +8,9 @@
             "path": "database/documentdb"
         },
         {
+            "path": "database/duckdb"
+        },
+        {
             "path": "database/spanner"
         },
         {
