@@ -8,6 +8,7 @@
         "environment": true,
         "git-hook-manager": true,
         "iam": true,
+        "js-runtime": true,
         "presentation": true,
         "sandbox": true,
         "task-runner": true,

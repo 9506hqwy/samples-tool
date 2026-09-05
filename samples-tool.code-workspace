@@ -65,6 +65,9 @@
             "path": "iam/keycloak"
         },
         {
+            "path": "js-runtime/deno/desktop"
+        },
+        {
             "path": "presentation/marp"
         },
         {
