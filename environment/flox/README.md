@@ -158,7 +158,7 @@ Exit flox environemnt.
 exit
 ```
 
-Activate flox automatically using `direnv` (see [use_flox](https://github.com/direnv/direnv/pull/1372).).
+Activate flox automatically using `direnv` (see [use_flox](https://github.com/direnv/direnv/pull/1372)).
 
 ```sh
 echo 'use flox' >> .envrc

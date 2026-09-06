@@ -53,6 +53,9 @@
             "path": "environment/mise"
         },
         {
+            "path": "environment/nix"
+        },
+        {
             "path": "git-hook-manager/hk"
         },
         {
