@@ -58,6 +58,16 @@ Setup direnv.
 echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
 ```
 
+Configure console output.
+
+```sh
+mkdir -p ~/.config/direnv
+cat >> ~/.config/direnv/direnv.toml <<EOF
+[global]
+hide_env_diff = true
+EOF
+```
+
 ## Create
 
 Create direnv project.
@@ -92,7 +102,7 @@ direnv: loading ~/projects/samples-tool/environment/direnv/env01/.envrc
 direnv: export +PROJECT
 ```
 
- Need to allow direnv project if modify *.envrc* file in directly.
+Need to allow direnv project if modify *.envrc* file in directly.
 
 ```sh
 direnv allow .

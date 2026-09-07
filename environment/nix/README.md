@@ -92,3 +92,4 @@ echo 'use flake' >> .envrc
 - [Nix/Nixpkgs/NixOS](https://github.com/NixOS)
 - [Nix community projects](https://github.com/nix-community)
 - [Nix 2.35.2 Reference Manual](https://nix.dev/manual/nix/2.35/introduction.html)
+- [Nixpkgs Reference Manual](https://nixos.org/manual/nixpkgs/stable/)
