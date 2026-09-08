@@ -68,6 +68,9 @@
             "path": "iam/keycloak"
         },
         {
+            "path": "js-runtime/bun/bun-webview"
+        },
+        {
             "path": "js-runtime/deno/deno-desktop"
         },
         {
