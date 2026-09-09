@@ -49,12 +49,12 @@ Enable flake features.
 
 ```sh
 mkdir -p ~/.config/nix/
-echo "extra-experimental-features = flakes" >> ~/.config/nix/nix.conf
+echo "extra-experimental-features = flakes nix-command" >> ~/.config/nix/nix.conf
 cat ~/.config/nix/nix.conf
 ```
 
 ```text
-extra-experimental-features = flakes
+extra-experimental-features = flakes nix-command
 ```
 
 Install nixfmt.

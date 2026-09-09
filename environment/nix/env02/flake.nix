@@ -9,20 +9,24 @@
     { self, nixpkgs }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs { inherit system; };
     in
     {
       formatter.${system} = pkgs.nixfmt-tree;
       devShells.${system}.default = pkgs.mkShell {
-        packages = [
-          pkgs.python314
-          pkgs.pkg-config
-          pkgs.libffi
-          pkgs.openssl
-          pkgs.zlib
-          pkgs.stdenv.cc.cc.lib
+        packages = with pkgs; [
+          python314
+          pkg-config
+          libffi
+          openssl
+          zlib
+          stdenv.cc.cc.lib
         ];
         shellHook = ''
+          if [ ! -d ".venv" ]; then
+              python -m venv .venv
+          fi
+
           source .venv/bin/activate
 
           export LD_LIBRARY_PATH="${pkgs.libffi}/lib:$LD_LIBRARY_PATH"
