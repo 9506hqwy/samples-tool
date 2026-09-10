@@ -1,0 +1,16 @@
+version: "0.5"
+
+processes:
+  sleep-1:
+    command: while true; do sleep 1; done
+    depends_on:
+      sleep-2:
+        # condition
+        # - process_started (default)
+        # - process_healthy
+        # - process_log_ready (monitor sleep-2's ready_log_line)
+        # - process_completed
+        # - process_completed_successfully
+        condition: process_completed
+  sleep-2:
+    command: while true; do sleep 1; done

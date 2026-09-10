@@ -1,0 +1,13 @@
+version: "0.5"
+
+processes:
+  echo:
+    command: echo $$$$ | tee /tmp/a.pid | tee /tmp/b.pid
+    is_daemon: true
+    shutdown:
+      command: kill -9 $$(cat /tmp/b.pid); rm -f /tmp/b.pid
+    availability:
+      restart: always
+    readiness_probe:
+      exec:
+        command: "[ -e /tmp/a.pid ]"

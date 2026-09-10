@@ -1,0 +1,13 @@
+version: "0.5"
+is_tui_disabled: true
+
+environment:
+  - GLOBAL_VALUE=Hello
+
+processes:
+  echo:
+    # expand environment using envsubst command without braces.
+    # expand environment using bash with escaped $.
+    command: echo $${GLOBAL_VALUE}, $${LOCAL_VALUE}!
+    environment:
+      - LOCAL_VALUE=World

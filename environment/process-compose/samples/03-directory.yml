@@ -1,0 +1,10 @@
+version: "0.5"
+
+processes:
+  pwd-1:
+    # Run in the current working directory
+    command: pwd
+  pwd-2:
+    # Run in the root directory
+    command: pwd
+    working_dir: /

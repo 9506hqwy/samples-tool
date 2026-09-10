@@ -1,0 +1,7 @@
+version: "0.5"
+
+processes:
+  sleep:
+    command: echo $$$$ > /tmp/a.pid;while true; do sleep 1; done
+    shutdown:
+      command: kill -9 $$(cat /tmp/a.pid); rm -f /tmp/a.pid

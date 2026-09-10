@@ -1,0 +1,7 @@
+version: "0.5"
+
+processes:
+  date:
+    command: date
+    schedule:
+      cron: "* * * * *"

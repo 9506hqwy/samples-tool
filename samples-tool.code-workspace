@@ -56,6 +56,9 @@
             "path": "environment/nix"
         },
         {
+            "path": "environment/process-compose"
+        },
+        {
             "path": "git-hook-manager/hk"
         },
         {

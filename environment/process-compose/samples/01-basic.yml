@@ -1,0 +1,5 @@
+version: "0.5"
+
+processes:
+  sleep:
+    command: while true; do sleep 1; done
