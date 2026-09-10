@@ -86,6 +86,13 @@ Activate nix automatically using `direnv` (see [use_flake](https://github.com/di
 echo 'use flake' >> .envrc
 ```
 
+## Base on Nix
+
+- [devbox](https://github.com/jetify-com/devbox)
+- [devenv](https://github.com/cachix/devenv)
+- [devshell](https://github.com/numtide/devshell)
+- [flox](https://github.com/flox/flox)
+
 ## References
 
 - [NixOS](https://nixos.org/)
