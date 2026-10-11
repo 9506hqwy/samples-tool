@@ -1,0 +1,28 @@
+fontsAlias:
+  fontSerif: IPAexMincho
+  fontSerifBold: IPAexMincho-Bold
+  fontSerifBoldItalic: IPAexMincho-BoldItalic
+  fontSerifItalic: IPAexMincho-Italic
+  fontSans: IPAexGothic
+  fontSansBold: IPAexGothic-Bold
+  fontSansBoldItalic: IPAexGothic-BoldItalic
+  fontSansItalic: IPAexGothic-Italic
+pageSetup:
+  firstTemplate: decoratedPage
+pageTemplates:
+  customPage:
+    defaultFooter: |
+      .. class:: right
+
+      ###Page### / ###Total###
+    defaultHeader: "###Title### ###Section###"
+    frames:
+      - - 0%
+        - 0%
+        - 100%
+        - 100%
+    showFooter: true
+    showHeader: true
+styles:
+  heading2:
+    spaceBefore: 16

@@ -32,6 +32,9 @@
             "path": "documentation/properdocs"
         },
         {
+            "path": "documentation/rst2pdf"
+        },
+        {
             "path": "documentation/sphinx"
         },
         {

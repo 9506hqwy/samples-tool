@@ -1,0 +1,8 @@
+[project]
+name = "samples"
+version = "0.1.0"
+description = "rst2pdf Samples"
+requires-python = ">=3.13"
+dependencies = [
+    "rst2pdf[aafiguresupport,mathsupport,plantumlsupport,rawhtmlsupport,sphinx,svgsupport]>=0.105",
+]
