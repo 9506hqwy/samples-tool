@@ -2,6 +2,6 @@
 
 ## Citation
 
-:::{warning}
+```{warning}
 Is there function to compile citation ?
-:::
+```

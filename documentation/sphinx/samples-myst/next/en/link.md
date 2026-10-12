@@ -2,7 +2,7 @@
 
 ## Link to Section
 
-See [Sub Section 1](#en_section_section1_subsection1).
+See [](en_section_section1_subsection1).
 
 ## Link to Graph
 

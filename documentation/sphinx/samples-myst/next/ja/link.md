@@ -2,7 +2,7 @@
 
 ## セクションへのリンク
 
-[サブセクション1](#ja_section_section1_subsection1) にリンクを張る。
+[](ja_section_section1_subsection1) にリンクを張る。
 
 ## 図へのリンク
 
