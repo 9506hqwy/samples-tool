@@ -56,3 +56,9 @@ rm "/tmp/powershell_${PWSH_VERSION}-1.deb_amd64.deb"
 # Do not use java feature because /tmp permission is changed to 755.
 set +eu
 umask 0002 && . /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven 3.9.16
+
+# Install typst
+TYPST_VERSION=0.15.1
+curl -fsSL -o - "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" | \
+    tar -Jxf - -O "typst-x86_64-unknown-linux-musl/typst" > ~/.local/bin/typst
+chmod +x ~/.local/bin/typst

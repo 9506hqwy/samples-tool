@@ -10,8 +10,8 @@ project:
     title: true
     headings: true
   exports:
-    - format: pdf
-      template: plain_latex_book
+    - format: typst
+      template: plain_typst_book
       articles:
         - index.md
         - intro.md

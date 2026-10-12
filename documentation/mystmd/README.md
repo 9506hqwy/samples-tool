@@ -76,6 +76,7 @@ building myst-cli session with API URL: https://api.mystmd.org
 - Customize prefix of figure and table.
 - Customize web site width.
 - Export PDF with japanese fonts using LaTeX.
+- Customize the PDF output. e.g. cover, toc, layout.
 
 ## References
 
