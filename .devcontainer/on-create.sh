@@ -8,8 +8,14 @@ sudo apt-get install -y \
     chromium \
     fonts-ipaexfont \
     fonts-noto-cjk \
+    imagemagick \
+    latexmk \
     ruby-asciidoctor-pdf \
     ruby-rouge \
+    texlive-fonts-recommended \
+    texlive-lang-cjk \
+    texlive-plain-generic \
+    texlive-xetex \
     zstd
 
 # Configuration PATH

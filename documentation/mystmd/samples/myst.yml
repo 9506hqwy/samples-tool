@@ -1,0 +1,26 @@
+version: 1
+project:
+  toc:
+    - file: index.md
+    - file: intro.md
+    - file: graph_table.md
+    - file: link.md
+    - file: reference.md
+  numbering:
+    title: true
+    headings: true
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      articles:
+        - index.md
+        - intro.md
+        - graph_table.md
+        - link.md
+        - reference.md
+site:
+  template: book-theme
+  options:
+    logo_text: "MyST Samples"
+  parts:
+    primary_sidebar_footer: ""

@@ -29,6 +29,9 @@
             "path": "documentation/mkdocs"
         },
         {
+            "path": "documentation/mystmd"
+        },
+        {
             "path": "documentation/properdocs"
         },
         {
