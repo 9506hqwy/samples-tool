@@ -119,6 +119,9 @@
             "path": "uia/win-app-driver"
         },
         {
+            "path": "uia/winapp"
+        },
+        {
             "path": "vcs/git"
         },
         {
