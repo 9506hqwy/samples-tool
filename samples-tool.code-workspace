@@ -83,6 +83,9 @@
             "path": "js-runtime/deno/deno-desktop"
         },
         {
+            "path": "packaging/winapp"
+        },
+        {
             "path": "presentation/marp"
         },
         {

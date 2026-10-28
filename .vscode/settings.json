@@ -9,6 +9,7 @@
         "git-hook-manager": true,
         "iam": true,
         "js-runtime": true,
+        "packaging": true,
         "presentation": true,
         "sandbox": true,
         "task-runner": true,

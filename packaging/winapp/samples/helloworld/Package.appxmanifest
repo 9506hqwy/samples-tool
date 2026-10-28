@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap rescap">
+
+  <Identity
+    Name="helloworld"
+    Publisher="CN=9506hqwy"
+    Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>helloworld</DisplayName>
+    <PublisherDisplayName>9506hqwy</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.18362.0" MaxVersionTested="10.0.26200.0" />
+  </Dependencies>
+
+  <Applications>
+    <Application Id="helloworld">
+      <uap:VisualElements
+        DisplayName="helloworld"
+        Description="Sample Application"
+        BackgroundColor="transparent"
+        Square150x150Logo="Assets\MedTile.png"
+        Square44x44Logo="Assets\AppList.png"
+        AppListEntry="none" />
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>
