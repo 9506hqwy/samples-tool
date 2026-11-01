@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:desktop6="http://schemas.microsoft.com/appx/manifest/desktop/windows10/6"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap desktop6 rescap">
+
+  <Identity
+    Name="sample-service"
+    Publisher="CN=9506hqwy"
+    Version="0.1.0.0" />
+
+  <Properties>
+    <DisplayName>sample-service</DisplayName>
+    <PublisherDisplayName>9506hqwy</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.18362.0" MaxVersionTested="10.0.26200.0" />
+  </Dependencies>
+
+  <Applications>
+    <Application Id="sampleService">
+      <uap:VisualElements
+        DisplayName="sample-service"
+        Description="Windows Application"
+        BackgroundColor="transparent"
+        Square150x150Logo="Assets\MedTile.png"
+        Square44x44Logo="Assets\AppList.png"
+        AppListEntry="none" />
+      <Extensions>
+        <desktop6:Extension
+          Category="windows.service"
+          Executable="Service.exe"
+          EntryPoint="Windows.FullTrustApplication">
+            <desktop6:Service
+              Name="SampleService"
+              StartupType="auto"
+              StartAccount="localService" />
+        </desktop6:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+
+  <!-- https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/app-capability-declarations -->
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+    <rescap:Capability Name="localSystemServices" />
+    <rescap:Capability Name="packagedServices" />
+    <rescap:Capability Name="unvirtualizedResources" />
+  </Capabilities>
+</Package>

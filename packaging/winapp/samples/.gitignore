@@ -1,2 +1,6 @@
+bin/
+obj/
+
 *.msix
 dev.pfx
+packages.lock.json
