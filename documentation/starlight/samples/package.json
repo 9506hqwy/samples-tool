@@ -17,6 +17,6 @@
         "starlight-versions": "^0.10.1"
     },
     "devDependencies": {
-        "astro-pdf": "^1.10.0"
+        "astro-pdf": "^2.0.0"
     }
 }
