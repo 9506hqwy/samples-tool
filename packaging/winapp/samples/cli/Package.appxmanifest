@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+  xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  IgnorableNamespaces="uap uap5 uap10 rescap">
+
+  <Identity
+    Name="goRegistry"
+    Publisher="CN=9506hqwy"
+    Version="0.1.0.0" />
+
+  <Properties>
+    <DisplayName>go-registry</DisplayName>
+    <PublisherDisplayName>9506hqwy</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.18362.0" MaxVersionTested="10.0.26200.0" />
+  </Dependencies>
+
+  <Applications>
+    <Application Id="goRegistry"
+      Executable="go-registry.exe"
+      EntryPoint="windows.fullTrustApplication"
+      uap10:Subsystem="console"
+      uap10:SupportsMultipleInstances="true">
+      <uap:VisualElements
+        DisplayName="go-registry"
+        Description="Go Application"
+        BackgroundColor="transparent"
+        Square150x150Logo="Assets\MedTile.png"
+        Square44x44Logo="Assets\AppList.png"
+        AppListEntry="none" />
+      <Extensions>
+        <uap5:Extension Category="windows.appExecutionAlias">
+          <uap5:AppExecutionAlias>
+            <uap5:ExecutionAlias Alias="go-registry-write.exe" />
+          </uap5:AppExecutionAlias>
+        </uap5:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+
+  <!--
+   Adding the `app.manifest` file causes the application to throw a "cannot access file" error when run by non-administrator user.
+   Success when run as administrator.
+  -->
+
+  <Capabilities>
+    <rescap:Capability Name="allowElevation" />
+  </Capabilities>
+</Package>
