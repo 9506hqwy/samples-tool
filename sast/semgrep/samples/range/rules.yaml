@@ -1,0 +1,12 @@
+rules:
+  - id: hello-in-main
+    languages:
+      - python
+    message: Found 'Hello' function
+    # in-function AND function call
+    patterns:
+      - pattern-inside: |
+          def main():
+              ...
+      - pattern: Hello(...)
+    severity: HIGH

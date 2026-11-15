@@ -1,0 +1,20 @@
+rules:
+  - id: comment-hello
+    languages:
+      - python
+    message: Found 'Hello' comment
+    # comment OR docstring
+    pattern-either:
+      # PCRE regex
+      - pattern-regex: "#.*?Hello.*?"
+      - patterns:
+        - pattern: |
+            def $FUNC(...):
+                "$DOC"
+                ...
+        # PCRE regex
+        - metavariable-regex:
+            metavariable: $DOC
+            # DOTALL mode
+            regex: (?s).*\bHello\b.*
+    severity: HIGH

@@ -1,0 +1,12 @@
+rules:
+  - id: module-comment
+    languages:
+      - generic
+    message: Missing module-level comment
+    patterns:
+      - pattern-regex: \A.*
+      - pattern-not-regex: \A"{3}
+    paths:
+      include:
+        - "*.py"
+    severity: HIGH

@@ -1,0 +1,12 @@
+rules:
+  - id: hello-function-call
+    languages:
+      - python
+    message: Found 'Hello' function call
+    # function call AND argument comparison
+    patterns:
+      - pattern: Hello($ARG)
+      - metavariable-comparison:
+          # Python code
+          comparison: $ARG == "World"
+    severity: HIGH

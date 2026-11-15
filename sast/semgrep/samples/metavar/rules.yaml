@@ -1,0 +1,14 @@
+rules:
+  - id: arg-in-docstring
+    languages:
+      - python
+    message: Missing argument($ARG) in docstring
+    # in-function AND function call
+    patterns:
+      - pattern: |
+          def $FUNC(..., $ARG, ...):
+              "$DOC"
+              ...
+      - metavariable-comparison:
+          comparison: not str($ARG) in $DOC
+    severity: HIGH

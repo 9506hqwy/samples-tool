@@ -12,6 +12,7 @@
         "packaging": true,
         "presentation": true,
         "sandbox": true,
+        "sast": true,
         "task-runner": true,
         "testing": true,
         "uia": true,

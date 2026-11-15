@@ -95,6 +95,9 @@
             "path": "sandbox/bubblewrap"
         },
         {
+            "path": "sast/semgrep"
+        },
+        {
             "path": "task-runner/go-task"
         },
         {

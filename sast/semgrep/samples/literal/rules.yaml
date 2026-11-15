@@ -1,0 +1,13 @@
+# https://docs.semgrep.dev/writing-rules/pattern-syntax#literal-metavariables
+rules:
+  - id: literal-hello
+    languages:
+      - python
+    message: Found 'Hello' literal
+    # literal AND regex
+    patterns:
+      - pattern: '"$STR"'
+      - metavariable-regex:
+          metavariable: $STR
+          regex: Hello
+    severity: HIGH
