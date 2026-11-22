@@ -1,0 +1,9 @@
+img#ja-fig-02 {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+}

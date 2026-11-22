@@ -1,0 +1,15 @@
+{
+  "name": "vivliostyle-samples",
+  "description": "Vivliostyle Samples",
+  "author": "9506hqwy",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "vivliostyle build",
+    "preview": "vivliostyle preview"
+  },
+  "dependencies": {
+    "@vivliostyle/cli": "11.5.0"
+  }
+}
