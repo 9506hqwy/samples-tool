@@ -95,6 +95,9 @@
             "path": "sandbox/bubblewrap"
         },
         {
+            "path": "sandbox/hyperlight"
+        },
+        {
             "path": "sast/semgrep"
         },
         {
