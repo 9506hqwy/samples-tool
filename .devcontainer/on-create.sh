@@ -46,6 +46,10 @@ curl -fsSL -o - "https://astral.sh/uv/install.sh" | sh
 # Install python 3.13, 3.14
 uv python install 3.13 3.14
 
+# Install bun
+export BUN_INSTALL=~/.local
+curl -fsSL https://bun.com/install | bash
+
 # Install PowerShell
 PWSH_VERSION="7.6.5"
 curl -fsSLO --output-dir /tmp "https://github.com/PowerShell/PowerShell/releases/download/v${PWSH_VERSION}/powershell_${PWSH_VERSION}-1.deb_amd64.deb"

@@ -3,12 +3,6 @@
     "name": "Base",
     // Base Container Image.
     "image": "mcr.microsoft.com/devcontainers/java:21-trixie",
-    // Add features.
-    "features": {
-        "ghcr.io/devcontainers/features/node:1": {
-            "nodeGypDependencies": false
-        }
-    },
     // Use 'onCreateCommand' to run commands after the container is created.
     "onCreateCommand": "/bin/bash ${containerWorkspaceFolder}/.devcontainer/on-create.sh",
     // Uncomment to connect as root instead.

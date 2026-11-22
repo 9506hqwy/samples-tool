@@ -2,24 +2,14 @@
 
 ## Environments
 
-Check NodeJS version.
+Check Bun version.
 
 ```sh
-node --version
+bun --version
 ```
 
 ```text
-v24.19.0
-```
-
-Check NPM version.
-
-```sh
-npm --version
-```
-
-```text
-11.17.0
+1.4.5
 ```
 
 ## Create
@@ -27,14 +17,14 @@ npm --version
 Create documentation project.
 
 ```sh
-npx blume init
+bunx blume init
 ```
 
 ```text
 Need to install the following packages:
 blume@1.5.3
 Ok to proceed? (y) y
-npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+bun warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 ┌  blume init
 │
 ◇  Where should we create your project?
@@ -64,8 +54,8 @@ npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use requir
 │                 │
 │  Next steps:    │
 │                 │
-│    npm install  │
-│    npm run dev  │
+│    bun install  │
+│    bun run dev  │
 │                 │
 ├─────────────────╯
 │
@@ -75,19 +65,19 @@ npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use requir
 Run development server.
 
 ```sh
-npm run dev
+bun run dev
 ```
 
 Build static documents.
 
 ```sh
-npm run build
+bun run build
 ```
 
 Serve static documents.
 
 ```sh
-npm run preview
+bun run preview
 ```
 
 ## TODO

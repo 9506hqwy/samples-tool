@@ -2,24 +2,14 @@
 
 ## Environments
 
-Check NodeJS version.
+Check Bun version.
 
 ```sh
-node --version
+bun --version
 ```
 
 ```text
-v24.14.1
-```
-
-Check NPM version.
-
-```sh
-npm --version
-```
-
-```text
-11.11.0
+1.4.5
 ```
 
 ## Create
@@ -27,13 +17,13 @@ npm --version
 Build static documents.
 
 ```sh
-npx antora antora-playbook.yml
+bunx antora antora-playbook.yml
 ```
 
 Run development server.
 
 ```sh
-npx http-server build/site -c-1
+bunx http-server build/site -c-1
 ```
 
 ## Notes

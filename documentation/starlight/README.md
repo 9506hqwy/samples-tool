@@ -2,24 +2,14 @@
 
 ## Environments
 
-Check NodeJS version.
+Check Bun version.
 
 ```sh
-node --version
+bun --version
 ```
 
 ```text
-v24.14.0
-```
-
-Check NPM version.
-
-```sh
-npm --version
-```
-
-```text
-11.9.0
+1.4.5
 ```
 
 ## Create
@@ -27,25 +17,25 @@ npm --version
 Create documentation project.
 
 ```sh
-npm create astro@latest -- --template starlight
+bun create astro@latest --template starlight
 ```
 
 Run development server.
 
 ```sh
-npm run dev
+bun run dev
 ```
 
 Build static documents.
 
 ```sh
-npm run build
+bun run build
 ```
 
 Serve static documents.
 
 ```sh
-npm run preview
+bun run preview
 ```
 
 ## TODO

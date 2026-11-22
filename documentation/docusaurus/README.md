@@ -2,24 +2,14 @@
 
 ## Environments
 
-Check NodeJS version.
+Check Bun version.
 
 ```sh
-node --version
+bun --version
 ```
 
 ```text
-v24.14.0
-```
-
-Check NPM version.
-
-```sh
-npm --version
-```
-
-```text
-11.9.0
+1.4.5
 ```
 
 ## Create
@@ -27,39 +17,39 @@ npm --version
 Create documentation project.
 
 ```sh
-npx create-docusaurus@latest samples classic
+bunx create-docusaurus@latest samples classic
 ```
 
 Run development server at default locale (en).
 The development server serves only a locale.
 
 ```sh
-npm run start
+bun run start
 ```
 
 Run development server at specified locale.
 
 ```sh
-npm run start -- --locale ja
+bun run start --locale ja
 ```
 
 Build static documents.
 
 ```sh
-npm run build
+bun run build
 ```
 
 Serve static documents at multi locale.
 
 ```sh
-npm run serve
+bun run serve
 ```
 
 Export PDF.
 
 ```sh
-npm run start -- --locale ja
-npm run docs-to-pdf -- \
+bun run start --locale ja
+bun run docs-to-pdf \
   --initialDocURLs="http://localhost:3000/9506hqwy/samples-tool/documentation/docusaurus/samples/ja/" \
   --version=3 \
   --puppeteerArgs "--no-sandbox" \
